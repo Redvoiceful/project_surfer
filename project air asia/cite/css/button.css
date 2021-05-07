@@ -1,0 +1,44 @@
+.button{
+    background: #f5170e;
+    border-radius: 35px;
+    padding: 18px 40px;
+    font-style: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #f5170e;
+}
+
+.button--color--red{
+    background: #da0100; 
+}
+
+.button:hover{
+    background: #fff;
+    color: #f5170e;
+    border-color:  #f5170e;
+    box-shadow: 0px 2px 4px rgba(218, 1, 0, 0.3);
+}
+
+.button_white{
+    background: #FFF;
+    color: #f5170e;
+    border: 1px solid #f5170e;
+    border-radius: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    font-style: bold;
+    font-size: 14px;
+}
+
+.button--black{
+    background: #2b2b2b;
+    border-radius: 35px;
+    margin-bottom: 96px;
+}
+
+.review--button{
+    margin-bottom: 96px;
+}

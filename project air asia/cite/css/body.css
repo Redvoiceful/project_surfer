@@ -1,0 +1,72 @@
+body {
+    font-family: "Open Sans", helvetica, sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1.42;
+    background: #031920;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-weight: normal;
+}
+
+p{
+    margin-top: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.main--page--wrapper{
+    background: url(../air-asia_img/background.jpg) center top no-repeat; 
+}
+
+.container{
+    margin: 0px auto;
+    width: 1141px;
+}
+
+.section{
+    margin-bottom: 53px;
+}
+
+.section__title{
+    display: inline-flex;
+    font-size: 36px;
+    line-height: 49.03px;
+    font-weight: bold;
+    margin-top: 265px;
+    margin-bottom: 51px;
+}
+
+.section__title-img{
+    width: 21px;
+    height: 28px;
+    margin-left: 12px;
+    margin-top: 11px;
+}

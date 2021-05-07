@@ -1,0 +1,61 @@
+.start{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url(../air-asia_img/bg.png) center bottom / cover no-repeat;
+}
+
+.central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: zoom .9s ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.central__logo{
+    width: 279px;
+    height: 119px;
+}
+
+.start__text{
+    font-size: 18px;
+}
+
+.start--button{
+    margin-top: 52px;
+}
+
+@keyframes zoom {
+    from {
+        transform:scale(.7);
+    }
+
+    20% {
+        transform:scale(1.15);
+    }
+
+    40% {
+        transform:scale(.9);
+    }
+
+
+    60% {
+        transform:scale(1.1);
+    }
+
+    80% {
+        transform:scale(.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

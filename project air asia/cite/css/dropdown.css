@@ -1,0 +1,40 @@
+.contacts__dropdown-title:hover .dropdown__list{
+    display: block;
+    top: 123%;
+    left: 30px;
+    opacity: .7;
+    transition: .5s ease;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dropdown__list{
+    position: absolute;
+    background: #ededed;
+    color: #1e1f20;
+    width: 160px;
+    height: 80px;
+    padding: 10% 10%;
+    visibility: hidden;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 5%;    
+}
+
+.dropdown__list:before{
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 56px;
+    top: -9px;
+    border-bottom: 30px solid #ededed;
+    border-left: 53px solid transparent;
+    border-right: 45px solid transparent;
+}
+
+.dropdown__item--first{
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+.top{
+    background: #fff;
+    min-height: 412px;
+    display: flex;
+    flex-direction: column;
+    background: url(../services/headline\ 1.jpg);
+}
+
+.top--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+
+.main__title{
+    font-size: 72px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1;
+}
+

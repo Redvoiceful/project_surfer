@@ -1,0 +1,86 @@
+.why {
+  color: #666;
+}
+
+.section__why {
+  padding: 20% 0%;
+  color: #666;
+  text-align: center;
+  padding: 9% 22%;
+}
+
+.container__why {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.why__content {
+  color: #292929;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.desc__list {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 50px;
+}
+.desc__list:first-child {
+  margin-left: 0;
+}
+
+.wrapper__item {
+  display: inline-flex;
+  background: #f2f5f4;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 2px;
+  position: relative;
+}
+
+.desc__item {
+  flex: 1;
+  position: relative;
+  padding: 0 3%;
+}
+.desc__item:before {
+  content: url(../img/shape.png);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  transform: translateX(50%);
+}
+.desc__item:first-child {
+  padding-left: 0;
+}
+.desc__item:last-child {
+  padding-right: 0;
+}
+.desc__item:last-child:before {
+  display: none;
+}
+
+.why__pic {
+  margin-left: 33px;
+  margin-top: 30px;
+  width: 50%;
+  height: 50%;
+}
+
+.why__head {
+  font-size: 27px;
+  font-weight: bold;
+  color: #292929;
+  margin-top: 20px;
+}
+
+.why__text {
+  margin-top: 20px;
+  padding: 0% 5%;
+}
