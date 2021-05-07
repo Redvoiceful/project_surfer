@@ -564,6 +564,11 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+}
 
 .form__column {
   flex: 1;
@@ -661,4 +666,15 @@ img {
 }
 .radio__chekbox:before {
   background: url("../img/checked.png") center center no-repeat;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__phone {
+  display: flex;
+  color: #292929;
+  font-size: 21px;
 }

@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__phone{
+    display: flex;
+    color: $semiblackFont;
+    font-size: 21px;
+}

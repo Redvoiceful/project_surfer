@@ -25,6 +25,9 @@
 .form{
     display: flex;
     flex-wrap: wrap;
+    @include tablets{
+        flex-direction: column;
+    }
 }
 
 .form__column{
