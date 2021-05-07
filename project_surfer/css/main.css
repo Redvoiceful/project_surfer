@@ -115,14 +115,18 @@ img {
 }
 
 .section {
-  height: 100%;
+  min-height: 36rem;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: inherit;
+  }
 }
 
 .main {
   background: url("../img/main__bg.jpg") center no-repeat;
   background-size: cover;
-  min-height: 36rem;
 }
 
 .main__container {
@@ -668,13 +672,12 @@ img {
   background: url("../img/checked.png") center center no-repeat;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
+.footer__address {
+  color: #292929;
+  font-size: 21px;
 }
 
 .footer__phone {
   display: flex;
-  color: #292929;
-  font-size: 21px;
+  align-items: center;
 }

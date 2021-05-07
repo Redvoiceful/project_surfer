@@ -1,10 +1,9 @@
-.footer{
-    display: flex;
-    justify-content: space-between;
+.footer__address{
+    color: $semiblackFont;
+    font-size: 21px;
 }
 
 .footer__phone{
     display: flex;
-    color: $semiblackFont;
-    font-size: 21px;
+    align-items: center;
 }
