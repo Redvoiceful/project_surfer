@@ -7,7 +7,7 @@
 }
 
 .main{
-    background: url('../img/main__bg.jpg') center no-repeat;
+    background: url('../img/main__bg.jpg') center center / contain  no-repeat;
     background-size: cover;    
 }
 
@@ -29,10 +29,19 @@
         background-color: #1968b1;
         max-height: 5.05rem;
     }
+
+    @include phones{
+        background-color: #1968b1;
+        max-height: 5.05rem;
+    }
 }
 
 .header__logo{
     @include tablets{
+        margin-left: 1rem;
+    }
+
+    @include phones{
         margin-left: 1rem;
     }
 }
@@ -104,8 +113,13 @@
     padding-bottom: 8%;
     @include tablets{
         width: 100%;
-        align-items: center;
         text-align: center;
+        padding: 10% 3%;
+    }
+    @include phones{
+        width: 100%;
+        text-align: center;
+        padding: 10% 3%;
     }
 }
 
@@ -135,6 +149,9 @@
     padding: 0% 0%;
 
     @include tablets{
+        display: none;
+    }
+    @include phones{
         display: none;
     }
 }

@@ -25,7 +25,7 @@
 
 .desc__list{
     display:flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     text-align: center;
     margin-left: 2.7rem;
@@ -33,9 +33,14 @@
     &:first-child{
         margin-left: 0;
     }
+
+    @include phones{
+        flex-direction: column;
+        margin-left: 0;
+    }
 }
 
-.wrapper__item{
+.icon__item{
     display: inline-flex;
     background: #f2f5f4;
     width: 7.1rem;
@@ -70,6 +75,13 @@
             display: none;
         }
     }
+    @include phones{
+        display: flex;
+        flex: 1;
+        padding: 3% 3%;
+        text-align: left;
+        align-items: center;
+    }
 }
 
 .why__pic{
@@ -90,5 +102,10 @@
 .why__text{
     margin-top: 1.11rem;
     padding: 0% 5%;
+    @include phones{
+        flex: 1;
+        margin-top: 0;
+        padding: 0% 5%;
+    }
 }
 

@@ -125,7 +125,7 @@ img {
 }
 
 .main {
-  background: url("../img/main__bg.jpg") center no-repeat;
+  background: url("../img/main__bg.jpg") center center/contain no-repeat;
   background-size: cover;
 }
 
@@ -149,8 +149,19 @@ img {
     max-height: 5.05rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .header {
+    background-color: #1968b1;
+    max-height: 5.05rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
+  .header__logo {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
   .header__logo {
     margin-left: 1rem;
   }
@@ -226,8 +237,15 @@ img {
 @media screen and (max-width: 768px) {
   .welcome {
     width: 100%;
-    align-items: center;
     text-align: center;
+    padding: 10% 3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .welcome {
+    width: 100%;
+    text-align: center;
+    padding: 10% 3%;
   }
 }
 
@@ -256,6 +274,11 @@ img {
   padding: 0% 0%;
 }
 @media screen and (max-width: 768px) {
+  .features__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
   .features__list {
     display: none;
   }
@@ -300,7 +323,7 @@ img {
 
 .desc__list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   text-align: center;
   margin-left: 2.7rem;
@@ -308,8 +331,14 @@ img {
 .desc__list:first-child {
   margin-left: 0;
 }
+@media screen and (max-width: 480px) {
+  .desc__list {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
 
-.wrapper__item {
+.icon__item {
   display: inline-flex;
   background: #f2f5f4;
   width: 7.1rem;
@@ -340,6 +369,15 @@ img {
 .desc__item:last-child:before {
   display: none;
 }
+@media screen and (max-width: 480px) {
+  .desc__item {
+    display: flex;
+    flex: 1;
+    padding: 3% 3%;
+    text-align: left;
+    align-items: center;
+  }
+}
 
 .why__pic {
   margin-left: 1.83rem;
@@ -358,6 +396,13 @@ img {
 .why__text {
   margin-top: 1.11rem;
   padding: 0% 5%;
+}
+@media screen and (max-width: 480px) {
+  .why__text {
+    flex: 1;
+    margin-top: 0;
+    padding: 0% 5%;
+  }
 }
 
 .goods {
@@ -571,6 +616,7 @@ img {
 @media screen and (max-width: 768px) {
   .form {
     flex-direction: column;
+    padding: 0 3%;
   }
 }
 
