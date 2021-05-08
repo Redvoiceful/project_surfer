@@ -27,6 +27,7 @@
     flex-wrap: wrap;
     @include tablets{
         flex-direction: column;
+        padding: 0 3%;
     }
 }
 
