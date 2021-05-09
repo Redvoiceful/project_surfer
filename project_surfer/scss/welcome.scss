@@ -1,7 +1,10 @@
 .section{
-    min-height: 36rem;
+    min-height: 54rem;
     margin: auto;
     @include tablets{
+        min-height: inherit;
+    }
+    @include phones{
         min-height: inherit;
     }
 }
