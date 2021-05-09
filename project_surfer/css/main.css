@@ -723,9 +723,20 @@ img {
   background: url("../img/checked.png") center center no-repeat;
 }
 
+.map__picture {
+  width: 100%;
+}
+
 .footer__address {
   color: #292929;
   font-size: 21px;
+}
+@media screen and (max-width: 480px) {
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__phone {
