@@ -165,6 +165,18 @@
     align-items: center;
 }
 
+.feature__icon{
+    margin-right: 0.7rem;
+    &:last-child{
+        margin-right: 0rem;
+    }
+}
+
+.feature__img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
 .button__wrapper{
     @include tablets{
         align-self: center;
