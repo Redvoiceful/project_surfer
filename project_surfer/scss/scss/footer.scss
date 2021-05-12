@@ -1,7 +1,16 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
 .footer_container{
     display: flex;
     justify-content: space-between;
     padding: 2% 0%;
+
     @include phones{
         flex-direction: column;
         align-items: center;
@@ -11,6 +20,7 @@
 .footer__address{
     color: $semiblackFont;
     font-size: 21px;
+
     @include phones{
         display: flex;
         flex-direction: column;

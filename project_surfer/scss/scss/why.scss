@@ -2,11 +2,6 @@
     color: $grayFont;
 }
 
-.section__why{
-    padding: 5.7rem 0;
-    color: $grayFont;
-    text-align: center;
-}
 
 .container__why{
     display: flex;
@@ -14,6 +9,36 @@
     height: 100%;
     width: 100%;
     max-width: 53rem;
+    justify-content: center;
+}
+
+.why__tittle{
+    color: $semiblackFont;
+    text-align: center;
+}
+
+.why__welcome{
+    text-align: center;
+    margin-bottom: 1rem;
+    @include iphones{
+        margin-bottom: 0.33rem;
+    }
+}
+
+.why__head{
+    font-weight: bold;
+    color: $semiblackFont;
+}
+
+.why__text{
+    margin-bottom: 2rem;
+    padding:0 1%;
+    @include phones{
+        flex: 1;
+        text-align: left;
+        margin-top: 0;
+        padding: 0% 5%;
+    }
 }
 
 .why__content{
@@ -66,10 +91,6 @@
     transform: translateX(50%);
     }
 
-    &:first-child{
-        padding-left: 0;
-    }
-
     &:last-child{
         padding-right: 0;
 
@@ -82,30 +103,15 @@
         flex: 1;
         padding: 3% 3%;
         text-align: left;
-        align-items: center;
+        align-items: flex-start;
+    }
+    @include iphones{
+        padding: 0 3%;
     }
 }
 
 .why__icon{
     width: 50%;
     height: 50%;
-
-}
-
-.why__head{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #292929;
-    margin-top: 1.55rem;
-}
-
-.why__text{
-    margin-top: 1.11rem;
-    padding: 0% 5%;
-    @include phones{
-        flex: 1;
-        margin-top: 0;
-        padding: 0% 5%;
-    }
 }
 

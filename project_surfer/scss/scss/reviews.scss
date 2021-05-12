@@ -6,12 +6,9 @@
     max-width: 53rem;
 }
 
-.review__head{
+.review__tittle{
     color: #292929;
-    text-transform: uppercase;
-    font-size: 2.6rem;
     font-weight: bold;
-    padding: 5% 35%;
 }
 
 .review__disc{
@@ -34,6 +31,8 @@
     height: 14rem;
     margin-left: auto;
     margin-right: auto;
+    flex: none;
+    margin-bottom: 0.55rem;
     @include tablets{
         width: 7.22rem;
         height: 7.22rem;

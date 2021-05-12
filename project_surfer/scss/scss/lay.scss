@@ -7,6 +7,10 @@ html{
     @include phones{
         font-size: $baseFontsize - 2px;
     }
+
+    @include iphones{
+        font-size: $baseFontsize - 4px;
+    }
 }
 
 :before{
