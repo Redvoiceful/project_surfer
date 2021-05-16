@@ -866,7 +866,7 @@ img {
 
 .parameters__wrapper {
   position: relative;
-  left: -10000%;
+  left: -100%;
 }
 
 .parameters__list {

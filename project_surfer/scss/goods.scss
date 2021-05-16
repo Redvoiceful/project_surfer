@@ -44,12 +44,12 @@
     @include tablets{
         display: none;
     }
-} 
+}
 
 .parameters__wrapper{
     position: relative;
     left: -10000%;
-    
+
 }
 .parameters__list{
     background: rgba (248, 250, 249 0.8);
@@ -113,7 +113,7 @@
     flex-direction: column;
     @include tablets{
         align-items: center;
-    }    
+    }
 }
 
 .items__options{
