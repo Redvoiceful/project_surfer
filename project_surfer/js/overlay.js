@@ -12,7 +12,7 @@ menu.open = function (){
     menu.isOpened = true;
 }
 menu.close = function (){
-    menu.style.left = '-100%';
+    menu.style.left = '-1000%';
     menu.isOpened = false;
 }
 
