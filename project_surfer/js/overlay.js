@@ -20,7 +20,7 @@ menu.close = function (){
 
 hamburger.addEventListener("click", (elem) => {
     elem.preventDefault();
-    if (menu.isOpened == false){
+    if (menu.isOpened === false){
         menu.open();
     } else {
         menu.close();
@@ -29,7 +29,7 @@ hamburger.addEventListener("click", (elem) => {
 
 menu.addEventListener('click', elem => {
     elem.preventDefault();
-    if (menu.isOpened == true){
+    if (menu.isOpened === true){
         menu.close();
     }
 })
@@ -42,7 +42,7 @@ parameter.open = () => {
 
 parameter.isOpened = true;
 parameter.close = () =>{
-    parameter.style.left = '-100%';
+    parameter.style.left = '-10000%';
     parameter.isOpened = false;
 }
 
@@ -50,7 +50,7 @@ parameter.close = () =>{
 
 about.addEventListener ('click', elem => {
     elem.preventDefault();
-    if (parameter.isOpened == false){
+    if (parameter.isOpened === false){
         parameter.open();
     } else {
         parameter.close();
