@@ -7,6 +7,10 @@ html{
     @include phones{
         font-size: $baseFontsize - 2px;
     }
+
+    @include iphones{
+        font-size: $baseFontsize - 4px;
+    }
 }
 
 :before{
@@ -37,6 +41,8 @@ input{
 .wrapper{
     color: $whiteFont;
     height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .container{
@@ -77,5 +83,5 @@ p{
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
