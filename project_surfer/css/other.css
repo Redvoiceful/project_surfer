@@ -1,0 +1,13 @@
+.wrapper__about {
+  position: relative;
+  background: #3a587e;
+  border-radius: 0.2rem;
+  width: 5.05rem;
+  height: 5.05rem;
+  margin-left: 4.5rem;
+  padding: 0.8rem 0;
+}
+.wrapper__about:before {
+  content: url("../img/cross_mini.png");
+  padding: 2% 28%;
+}
