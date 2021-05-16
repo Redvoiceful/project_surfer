@@ -1,0 +1,44 @@
+.wrapprer{
+    height: 100%;
+    width: 940px;
+    position: relative;
+}
+
+.text{
+    padding: 10px;
+}
+
+.text__btn{
+    justify-content: center;
+    display: flex;
+}
+
+.btn{
+    background: blue;
+    border-radius: 20px;
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+}
+
+
+.modals__window{
+    position: absolute;
+    background: black;
+    color: red;
+    left: -100%;
+    width: 930px;
+}
+
+.modal__text{
+    text-align: center;
+    padding: 10px;
+}
+
+.btn__modal{
+    border-radius: 50%;
+    padding: 10px;
+    background: red;
+    color: white;
+    text-decoration: none;
+}

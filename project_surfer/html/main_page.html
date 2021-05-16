@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
+        <div class="container container__overlay" id="overlay">
+            <div class="overlay" id="end">
+                <ul class="overlay__list" id="list__end">
+                    <li class="overlay__item" id="end__item">
+                        <a href="" class="menu__link" id="end__link">О нас</a>
+                    </li>
+                    <li class="overlay__item">
+                        <a href="" class="menu__link" id="end__link">Серфборды</a>
+                    </li>
+                    <li class="overlay__item">
+                        <a href="" class="menu__link" id="end__link">Команда</a>
+                    </li>
+                    <li class="overlay__item">
+                        <a href="" class="menu__link"id="end__link">Меню</a>
+                    </li>
+                    <li class="overlay__item">
+                        <a href="" class="menu__link" id="end__link">Отзывы</a>
+                    </li>
+                    <li class="overlay__item">
+                        <a href="" class="menu__link" id="end__link">Как мы работаем</a>
+                    </li>
+                    <li class="overlay__item">
+                        <a href="" class="menu__link" id="end__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
         <section class="section main">
             <div class="container main__container">
                 <header class="header">
@@ -48,7 +75,7 @@
                             <a href="tel:+78009039090" class="contacts__phone contacts__phone-number">8 800 903 90 90</a>
                         </address>
                     </div>
-                    <a href="" class="hamburger">
+                    <a href="" class="hamburger" id="humb">
                         <img src="../img/Group.svg" alt="" class="hamburger__icon">
                     </a>
                 </header>
@@ -133,6 +160,85 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section goods">
+            <div class="container  container__goods">
+                <div class="goods__about-items">
+                    <div class="wrapper__goods">
+                        <img src="../img/surf_main.png" alt="" class="surf__item">
+                    </div>
+                    <div class="goods__desc">
+                        <div class="goods__parameters">
+                            <div class="wrapper__about" id="about">
+                                <img src="" alt="" class="croos__about">
+                                <div class="text__about">Параметры</div>
+                            </div>
+                            <div class="parameters__wrapper" id="parameters">
+                                <ui class="parameters__list">
+                                    <li class="parameters__item">
+                                        <svg class="parameters__icon">
+                                            <use xlink:href="../img/sprite.svg#left-right"></use>
+                                          </svg>
+                                          <div class="parameters__text">Длина доски</div>
+                                          <div class="parameters__summ">от 2,5 м</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="parameters__icon">
+                                            <use xlink:href="../img/sprite.svg#left-right (opt)"></use>
+                                          </svg>
+                                          <div class="parameters__text">Ширина доски</div>
+                                          <div class="parameters__summ">от 40 см</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="parameters__icon">
+                                            <use xlink:href="../img/sprite.svg#thickness"></use>
+                                          </svg>
+                                          <div class="parameters__text">Толщина</div>
+                                          <div class="parameters__summ">8 см</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="parameters__icon">
+                                            <use xlink:href="../img/sprite.svg#libre"></use>
+                                          </svg>
+                                          <div class="parameters__text">Срок службы</div>
+                                          <div class="parameters__summ">5 лет</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="parameters__icon">
+                                            <use xlink:href="../img/sprite.svg#kg"></use>
+                                          </svg>
+                                          <div class="parameters__text">Вес</div>
+                                          <div class="parameters__summ">7-8 кг</div>
+                                    </li>
+                                </ui>
+                            </div>
+                        </div>
+                        <div class="goods__about">
+                            <div class="item__decs">
+                                <h2 class="item__name">Лонгборд 2.0</h2>
+                                <div class="item__text-desc">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                                </div>
+                                <div class="items__options">
+                                    <div class="item__options">
+                                        <div class="item__option">Длина доски</div>
+                                        <div class="item__option-desc">от 2,5 метров</div>
+                                    </div>
+                                    <div class="item__options">
+                                        <div class="item__option">Ширина доски</div>
+                                        <div class="item__option-desc">от 40 сантиметров</div>
+                                    </div>
+                                </div>
+                                <div class="price__options">
+                                    <div class="item__price">7000 ₽</div>
+                                    <div class="button__wrapper">
+                                        <a href="" class="button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -268,6 +374,7 @@
                 </div>
             </footer>
         </section>
-    </div> 
+    </div>
+    <script src="../js/overlay.js"></script>
 </body>
 </html>

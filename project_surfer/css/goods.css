@@ -4,43 +4,44 @@
 }
 
 .container__goods {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  max-width: 53rem;
+}
+
+.goods__item {
+  flex: none;
 }
 
 .goods__about-items {
   display: flex;
-  padding: 7% 0%;
-}
-
-.goods__item {
-  padding: 0% 0%;
-  position: relative;
+  align-items: center;
 }
 
 .wrapper__goods {
   padding: 0% 0%;
-  background: url("../img/Vector 2.png") left no-repeat;
+  background: url("../img/Vector 2.png") center center/contain no-repeat;
 }
 
 .goods__desc {
   display: flex;
+  flex-direction: column;
 }
 
-.goods__about {
+.wrapper__about {
   position: relative;
   background: #3a587e;
   border-radius: 0.2rem;
   width: 5.05rem;
   height: 5.05rem;
   margin-left: 4.5rem;
-  padding: 0.8rem 0;
+  padding: 0.8rem 0.5rem;
 }
-.goods__about:before {
+.wrapper__about:before {
   content: url("../img/cross_mini.png");
   padding: 2% 28%;
+}
+
+.goods__about {
+  margin-left: 3rem;
 }
 
 .text__about {
@@ -50,17 +51,9 @@
   font-weight: bold;
 }
 
-.wrapper__about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .item__decs {
   display: flex;
   flex-direction: column;
-  margin-top: 2.88rem;
-  min-width: 20.5rem;
 }
 
 .items__options {
