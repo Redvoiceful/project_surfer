@@ -53,7 +53,7 @@
     width: 98%;
   }
 }
-@media (max-width: 480 px) {
+@media (max-width: 480px) {
   body {
     font-size: 12px;
   }

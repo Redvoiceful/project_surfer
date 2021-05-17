@@ -18,6 +18,7 @@
 }
 
 .wrapper__goods{
+    width: 100%;
     padding: 0;
     background: url('../img/Vector_2.png') center center/ contain no-repeat;
     @include phones{
@@ -84,7 +85,6 @@
     border-radius: 0.2rem;
     width: 5.05rem;
     height: 5.05rem;
-    margin-left: 4.5rem;
     padding: 0.8rem 0.5rem;
 
     &:before{
@@ -143,5 +143,12 @@
 .item__price{
     font-size: 3.33rem;
     color: #151515;
+
+    @include tablets{
+        font-size: 2rem;
+    }
+    @include iphones{
+        font-size: 2rem;
+    }
 }
 

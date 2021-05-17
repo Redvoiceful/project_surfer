@@ -832,6 +832,7 @@ img {
 }
 
 .wrapper__goods {
+  width: 100%;
   padding: 0;
   background: url("../img/Vector_2.png") center center/contain no-repeat;
 }
@@ -964,6 +965,16 @@ img {
 .item__price {
   font-size: 3.33rem;
   color: #151515;
+}
+@media screen and (max-width: 768px) {
+  .item__price {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .item__price {
+    font-size: 2rem;
+  }
 }
 
 .container__review {
