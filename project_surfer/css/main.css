@@ -832,8 +832,8 @@ img {
 }
 
 .wrapper__goods {
-  padding: 0% 0%;
-  background: url("../img/Vector 2.png") center center/contain no-repeat;
+  padding: 0;
+  background: url("../img/Vector_2.png") center center/contain no-repeat;
 }
 @media screen and (max-width: 480px) {
   .wrapper__goods {
@@ -866,11 +866,12 @@ img {
 
 .parameters__wrapper {
   position: relative;
-  left: -100%;
+  left: -10000%;
 }
 
 .parameters__list {
-  background: rgba 248, 250, 249 0.8;
+  background: #F8F9FA;
+  opacity: 0.8;
   box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
