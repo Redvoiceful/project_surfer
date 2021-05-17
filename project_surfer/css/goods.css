@@ -17,8 +17,8 @@
 }
 
 .wrapper__goods {
-  padding: 0% 0%;
-  background: url("../img/Vector 2.png") center center/contain no-repeat;
+  padding: 0;
+  background: url("../img/Vector_2.png") center center/contain no-repeat;
 }
 
 .goods__desc {
