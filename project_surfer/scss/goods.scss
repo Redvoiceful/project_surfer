@@ -42,6 +42,7 @@
 .goods__parameters{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     @include tablets{
         display: none;
     }
@@ -77,7 +78,7 @@
 }
 
 .parameters__summ{
-    margin-left: 1rem;
+    margin-left: 1.1rem;
 }
 .wrapper__about{
     position: relative;
@@ -98,7 +99,7 @@
 
 
 .goods__about{
-    margin-left: 3rem;
+    margin-left: 2.99rem;
 }
 
 
@@ -136,7 +137,6 @@
 
 .price__options{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 

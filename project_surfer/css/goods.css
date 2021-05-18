@@ -17,6 +17,7 @@
 }
 
 .wrapper__goods {
+  width: 100%;
   padding: 0;
   background: url("../img/Vector_2.png") center center/contain no-repeat;
 }
