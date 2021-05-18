@@ -5,6 +5,8 @@
 
 .container__goods{
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .goods__about-items{
@@ -37,35 +39,43 @@
 .goods__desc{
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
 }
 
 .goods__parameters{
     display: flex;
     align-items: center;
-    justify-content: space-around;
     @include tablets{
         display: none;
     }
 }
 
 .parameters__wrapper{
-    position: relative;
-    left: -10000%;
-
+    position: absolute;
+    left: 100%;
+    top: 0;
 }
+
+.wrapper__about{
+    display:block;
+    &--active {
+        display: none;
+    }
+}
+
 .parameters__list{
     background: #F8F9FA;
     opacity: .8;
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
     padding: 1rem;
+    width: 15rem;
 }
 .parameters__item{
+    font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .parameters__icon{
     width: 1rem;
@@ -79,6 +89,7 @@
 
 .parameters__summ{
     margin-left: 1.1rem;
+    text-align: right;
 }
 .wrapper__about{
     position: relative;
@@ -97,17 +108,15 @@
     }
 }
 
-
-.goods__about{
-    margin-left: 2.99rem;
-}
-
-
 .text__about{
     color: #fff;
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: bold;
+}
+
+.goods__about{
+    margin-top: 1rem;
 }
 
 .item__decs{

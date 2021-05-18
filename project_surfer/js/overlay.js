@@ -8,11 +8,11 @@ const parameter = document.getElementById('parameters');
 
 menu.isOpened = false;
 menu.open = function (){
-    menu.style.left = 0;
+    menu.style.display = 'block';
     menu.isOpened = true;
 }
 menu.close = function (){
-    menu.style.left = '-10000%';
+    menu.style.display = 'none';
     menu.isOpened = false;
 }
 
@@ -36,13 +36,13 @@ menu.addEventListener('click', elem => {
 
 parameter.isOpened = false;
 parameter.open = () => {
-    parameter.style.left = 0;
+    parameter.style.display = 'none';
     parameter.isOpened = true;
 };
 
 parameter.isOpened = true;
 parameter.close = () =>{
-    parameter.style.left = '-10000%';
+    parameter.style.display = 'block';
     parameter.isOpened = false;
 }
 

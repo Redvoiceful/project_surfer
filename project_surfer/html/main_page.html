@@ -9,33 +9,6 @@
 </head>
 <body>
     <div class="wrapper" id="wrapper">
-        <div class="container container__overlay" id="overlay">
-            <div class="overlay" id="end">
-                <ul class="overlay__list" id="list__end">
-                    <li class="overlay__item" id="end__item">
-                        <a href="" class="menu__link">О нас</a>
-                    </li>
-                    <li class="overlay__item">
-                        <a href="" class="menu__link">Серфборды</a>
-                    </li>
-                    <li class="overlay__item">
-                        <a href="" class="menu__link">Команда</a>
-                    </li>
-                    <li class="overlay__item">
-                        <a href="" class="menu__link">Меню</a>
-                    </li>
-                    <li class="overlay__item">
-                        <a href="" class="menu__link">Отзывы</a>
-                    </li>
-                    <li class="overlay__item">
-                        <a href="" class="menu__link">Как мы работаем</a>
-                    </li>
-                    <li class="overlay__item">
-                        <a href="" class="menu__link">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </div> 
         <section class="section main">
             <div class="container main__container">
                 <header class="header">
@@ -44,9 +17,9 @@
                             <img src="../img/logo.png" alt="" class="logo">
                         </a>
                     </div>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
+                    <nav class="menu menu__overlay" id="overlay">
+                        <ul class="menu__list menu__list-overlay" id="end">
+                            <li class="menu__item menu__item-overlay" id="end__item">
                                 <a href="" class="menu__link">О нас</a>
                             </li>
                             <li class="menu__item">
@@ -173,46 +146,47 @@
                         <div class="goods__parameters">
                             <div class="wrapper__about" id="about">
                                 <img src="" alt="" class="croos__about">
+                                <div class="parameters__wrapper wrapper__about--active" id="parameters">
+                                    <ui class="parameters__list">
+                                        <li class="parameters__item">
+                                            <svg class="parameters__icon">
+                                                <use xlink:href="../img/sprite.svg#left-right"></use>
+                                            </svg>
+                                            <div class="parameters__text">Длина доски</div>
+                                            <div class="parameters__summ">от 2,5 м</div>
+                                        </li>
+                                        <li class="parameters__item">
+                                            <svg class="parameters__icon">
+                                                <use xlink:href="../img/sprite.svg#left-right (opt)"></use>
+                                            </svg>
+                                            <div class="parameters__text">Ширина доски</div>
+                                            <div class="parameters__summ">от 40 см</div>
+                                        </li>
+                                        <li class="parameters__item">
+                                            <svg class="parameters__icon">
+                                                <use xlink:href="../img/sprite.svg#thickness"></use>
+                                            </svg>
+                                            <div class="parameters__text">Толщина</div>
+                                            <div class="parameters__summ">8 см</div>
+                                        </li>
+                                        <li class="parameters__item">
+                                            <svg class="parameters__icon">
+                                                <use xlink:href="../img/sprite.svg#libre"></use>
+                                            </svg>
+                                            <div class="parameters__text">Срок службы</div>
+                                            <div class="parameters__summ">5 лет</div>
+                                        </li>
+                                        <li class="parameters__item">
+                                            <svg class="parameters__icon">
+                                                <use xlink:href="../img/sprite.svg#kg"></use>
+                                            </svg>
+                                            <div class="parameters__text">Вес</div>
+                                            <div class="parameters__summ">7-8 кг</div>
+                                        </li>
+                                    </ui>
+                                </div>
                                 <div class="text__about">Параметры</div>
-                            </div>
-                            <div class="parameters__wrapper" id="parameters">
-                                <ui class="parameters__list">
-                                    <li class="parameters__item">
-                                        <svg class="parameters__icon">
-                                            <use xlink:href="../img/sprite.svg#left-right"></use>
-                                          </svg>
-                                          <div class="parameters__text">Длина доски</div>
-                                          <div class="parameters__summ">от 2,5 м</div>
-                                    </li>
-                                    <li class="parameters__item">
-                                        <svg class="parameters__icon">
-                                            <use xlink:href="../img/sprite.svg#left-right (opt)"></use>
-                                          </svg>
-                                          <div class="parameters__text">Ширина доски</div>
-                                          <div class="parameters__summ">от 40 см</div>
-                                    </li>
-                                    <li class="parameters__item">
-                                        <svg class="parameters__icon">
-                                            <use xlink:href="../img/sprite.svg#thickness"></use>
-                                          </svg>
-                                          <div class="parameters__text">Толщина</div>
-                                          <div class="parameters__summ">8 см</div>
-                                    </li>
-                                    <li class="parameters__item">
-                                        <svg class="parameters__icon">
-                                            <use xlink:href="../img/sprite.svg#libre"></use>
-                                          </svg>
-                                          <div class="parameters__text">Срок службы</div>
-                                          <div class="parameters__summ">5 лет</div>
-                                    </li>
-                                    <li class="parameters__item">
-                                        <svg class="parameters__icon">
-                                            <use xlink:href="../img/sprite.svg#kg"></use>
-                                          </svg>
-                                          <div class="parameters__text">Вес</div>
-                                          <div class="parameters__summ">7-8 кг</div>
-                                    </li>
-                                </ui>
+
                             </div>
                         </div>
                         <div class="goods__about">
