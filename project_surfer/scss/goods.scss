@@ -35,18 +35,18 @@
     width: 100%;
     padding: 0;
     background: url('../img/Vector_2.png') center center/ contain no-repeat;
-    @include phones{
-        background-size: 50%;
+    @include tablets{
+        width: 50%;
     }
 }
 
-.surf__item{
-    @include phones{
-        width: 50%;
-        position: relative;
-        left: 25%;
-    }
-}
+//.surf__item{
+//    @include phones{
+//        width: 50%;
+//        position: relative;
+//        left: 25%;
+//    }
+//}
 
 .goods__desc{
     display: flex;
@@ -169,7 +169,7 @@
         font-size: 2rem;
     }
     @include iphones{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
