@@ -1,0 +1,38 @@
+.fixed{
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  @include tablets{
+    display: none;
+  }
+}
+
+.fixed__item{
+  position: relative;
+  margin-bottom: 5px;
+  &--active{
+    .fixed__link{
+      border-color: #ffffff;
+    }
+  }
+}
+
+.fixed__link{
+  width: 18px;
+  height: 19px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  &:before{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

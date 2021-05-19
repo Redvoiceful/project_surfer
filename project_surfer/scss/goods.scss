@@ -9,6 +9,18 @@
     align-items: center;
 }
 
+.goods__scroll{
+    width: 1.3rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+
+    &--right{
+        transform: rotate(180deg);
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+}
+
 .goods__about-items{
     display: flex;
     align-items: center;
