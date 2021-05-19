@@ -762,8 +762,7 @@ img {
 
 .goods__desc {
   display: flex;
-  flex-direction: column;
-  margin-left: 2rem; }
+  flex-direction: column; }
 
 .goods__parameters {
   display: flex;
@@ -837,6 +836,13 @@ img {
   @media screen and (max-width: 768px) {
     .item__decs {
       align-items: center; } }
+
+.item__name {
+  font-weight: bold;
+  margin-bottom: 0.4rem; }
+
+.item__text-desc {
+  margin-bottom: 0.4rem; }
 
 .items__options {
   display: flex; }

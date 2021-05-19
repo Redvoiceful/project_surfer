@@ -40,18 +40,9 @@
     }
 }
 
-//.surf__item{
-//    @include phones{
-//        width: 50%;
-//        position: relative;
-//        left: 25%;
-//    }
-//}
-
 .goods__desc{
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
 }
 
 .goods__parameters{
@@ -137,6 +128,15 @@
     @include tablets{
         align-items: center;
     }
+}
+
+.item__name{
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.item__text-desc{
+    margin-bottom: 0.4rem;
 }
 
 .items__options{
