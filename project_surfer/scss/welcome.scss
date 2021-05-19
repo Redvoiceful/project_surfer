@@ -88,22 +88,19 @@
             flex-direction: column;
             align-items: center;
             height: 100%;
-            justify-content: space-between;
-            padding: 7rem;
+            justify-content: center;
         }
     }
 }
 
 .menu__item{
     margin-right: 1rem;
-
-    &:last-child{
+    &:last-child .-overlay{
         margin-right: 0;
     }
-    &__item-overlay{
-        margin: 0.8rem;
-    }
 }
+
+
 
 .menu__link{
     text-decoration: none;
