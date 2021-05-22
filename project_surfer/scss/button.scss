@@ -24,6 +24,16 @@
     font-weight: bold;
 }
 
+.close{
+    background: $yellowcolor;
+    border-radius: 5.55rem;
+    padding: 1.16rem 2.27rem;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .btn__unnactive{
     text-decoration: none;
     color: #fff;

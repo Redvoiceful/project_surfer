@@ -4,22 +4,32 @@
     height: 100%;
     width: 100%;
     max-width: 53rem;
+    min-width: 0;
 }
 
 .review__tittle{
     color: #292929;
     font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .review__disc{
     background: #f8faf9;
 }
+.review__list .slick-list {
+    overflow: hidden;
+}
 
-.review__item {
+.review__list .slick-track{
+    display: flex;
+    align-items: center;
+}
+
+.review__item{
     display: flex;
     align-content: center;
     justify-content: space-between;
-    padding: 4% 4%;
+    min-width: 0;
     @include tablets{
         flex-direction: column;
         align-items: center;
@@ -62,14 +72,16 @@
     color: #292929;
 }
 
-.review__avatars{
+
+.review__avatars {
     display: flex;
     margin-top: 0.6rem;
     margin-bottom: 3.5rem;
     justify-content: center;
+    min-width: 0;
 }
 
-.avatar{
+.avatar {
     border-radius: 5.77rem;
     width: 4.11rem;
     height: 4.11rem;
@@ -77,4 +89,55 @@
 
 .avatar__active{
     border: 0.33rem solid #fed83f;
+}
+
+/* Точки (булиты) */
+.review__avatars .slick-dotted{
+    display: flex;
+    margin-top: 0.6rem;
+    margin-bottom: 3.5rem;
+    justify-content: center;
+    min-width: 0;
+    background: white;
+    padding: 1rem;
+
+}
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    margin: 10px 0 0;
+    list-style: none;
+    background: white;
+    text-align: center;
+    font-size: 0;
+}
+
+.slick-dots li:last-child {
+    margin-right: 0;
+}
+.slick-dots li.slick-active button {
+    border: 0.33rem solid #fed83f;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    border-radius: 50%;
+    height: 4rem;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: url(../img/photo.png) no-repeat 0 0 / cover;
+}
+.slick-dots li:nth-child(2) button {
+    background-image: url(../img/photo_1.png);
+}
+.slick-dots li:nth-child(3) button {
+    background-image: url(../img/photo_2.png);
 }

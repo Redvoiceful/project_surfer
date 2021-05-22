@@ -49,4 +49,7 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 29" id="triangle">
     <path d="M14 28L1.914 15.914a2 2 0 010-2.828L14 1" stroke="#000" stroke-width="2" stroke-linecap="round"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 7" id="polygon">
+    <path d="M4.5 7L.603.25h7.794L4.5 7z" fill="#292929"></path>
+  </symbol>
 </svg>
