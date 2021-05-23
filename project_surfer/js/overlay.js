@@ -88,50 +88,58 @@ aboutF.addEventListener('click', elem => {
 
 $(document).ready(() => {
     $('.about__unit').hide().prev().click(function () {
+        $('.about__unit').not(this).closest('.team__item').removeClass('team__item--active');
         $('.about__unit').not(this).slideUp();
-        $('#polygon').not(this).css("transform", "rotate(+" + 180 + "deg)");
+        $(this).next().not(':visible').closest('.team__item').addClass('team__item--active');
         $(this).next().not(':visible').slideDown();
     })
 })
 
-function show(element) {
-    element.style.display = "flex";
-    // element.style.transition = '1s, ease';
-}
-
-function hide(element) {
-    element.style.display = "none";
-    element.style.animation = 'slidein';
-
-}
 
 const sliderElements = document.getElementsByClassName('goods__about-items');
 
-let activeCounter = 0;
-let activeElement = sliderElements[activeCounter];
+let offset = 0;
 
 right.addEventListener('click', slideRight);
 
-function slideRight() {
-    hide(activeElement);
-    activeCounter++;
-    if (activeCounter >= sliderElements.length) {
-        activeCounter = 0;
+function animateTransition(element, transitionFrom, transitionTo, duration) {
+    const fps = 25;
+    const steps = duration * fps;
+    const delta = (transitionTo - transitionFrom) / steps;
+
+    for (let i = 0; i < steps; i++) {
+        setTimeout(() => {
+            element.style.transform = 'translate(' + (transitionFrom + (i * delta)) + '%)';
+        }, i * 1000 / fps);
     }
-    activeElement = sliderElements[activeCounter];
-    show(activeElement);
+    setTimeout(() => {
+        element.style.transform = 'translate(' + transitionTo + '%)';
+    }, duration * 1000);
 }
+
+function slideRight() {
+    let nextOffset = offset + 1;
+    if (nextOffset === sliderElements.length) {
+        nextOffset = 0;
+    }
+    for (const element of sliderElements) {
+        animateTransition(element, -100 * offset, -100 * nextOffset, 0.5);
+    }
+    offset = nextOffset;
+}
+
 
 left.addEventListener('click', slideLeft);
 
 function slideLeft() {
-    hide(activeElement);
-    activeCounter--;
-    if (activeCounter < 0) {
-        activeCounter = sliderElements.length - 1;
+    let prev = offset - 1;
+    if (prev === -1) {
+        prev = sliderElements.length -1;
     }
-    activeElement = sliderElements[activeCounter];
-    show(activeElement);
+    for (const element of sliderElements) {
+        animateTransition(element, -100 * offset, -100 * prev, 0.5);
+    }
+    offset = prev;
 }
 
 

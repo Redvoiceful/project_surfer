@@ -1,6 +1,8 @@
 .goods{
     background: #f8faf9;
     color: #666;
+    display: flex;
+    align-items: center;
 }
 
 .container__goods{
@@ -8,32 +10,39 @@
     height: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
-.goods__slider{
-    height: 100%;
-}
-#fist{
-    visibility: visible;
-}
-#second{
-    display: none;
-}
 .goods__scroll{
     width: 1.3rem;
     height: 1.5rem;
     margin-right: 1rem;
+    position: absolute;
 
     &--right{
         transform: rotate(180deg);
         margin-right: 0;
-        margin-left: 1rem;
+        margin-left: 1rem;right: 0;
+    }
+    &--left{
+        left: 0;
     }
 }
 
-.goods__about-items{
+.slider__goods {
+    height: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
+
+}
+
+
+.goods__about-items  {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
     @include tablets{
         flex-direction: column;
         align-items: center;
@@ -147,6 +156,9 @@
 
 .item__text-desc{
     margin-bottom: 0.4rem;
+    @include phones{
+        max-width: 80%;
+    }
 }
 
 .items__options{
@@ -182,4 +194,3 @@
         font-size: 1.5rem;
     }
 }
-
