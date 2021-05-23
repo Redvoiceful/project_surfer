@@ -1,0 +1,58 @@
+.team{
+  height: 100%;
+}
+
+.container__team{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #292929;
+}
+
+.tittle__team{
+  color: #292929;
+  margin-bottom: 2rem;
+}
+
+.team__list{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.team__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo{
+  max-width: 90%;
+}
+
+.about__unit{
+  max-width: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.polygon{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.about__satus{
+  font-size: 1rem;
+}
+
+.team__desc{
+  text-align: center;
+  color: #666666;
+}
