@@ -756,9 +756,10 @@ img {
     transform: rotate(180deg);
     margin-right: 0;
     margin-left: 1rem;
-    right: 0; }
+    right: 1rem;
+    z-index: 1; }
   .goods__scroll--left {
-    left: 0;
+    left: -1rem;
     z-index: 1; }
 
 .slider__goods {
