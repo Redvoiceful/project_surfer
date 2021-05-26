@@ -10,7 +10,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    position: relative;
 }
 
 .goods__scroll{
@@ -26,6 +26,7 @@
     }
     &--left{
         left: 0;
+        z-index: 1;
     }
 }
 

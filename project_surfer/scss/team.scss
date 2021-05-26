@@ -52,9 +52,6 @@
 
 .photo{
   max-width: 90%;
-  @include phones{
-    max-width: 50%;
-  }
 }
 
 .about__unit{

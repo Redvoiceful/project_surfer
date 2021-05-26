@@ -117,10 +117,19 @@ function animateTransition(element, transitionFrom, transitionTo, duration) {
     }, duration * 1000);
 }
 
+function moveFirstElement() {
+    const firstElement = sliderElements[0];
+    const clone = firstElement.cloneNode(true);
+    firstElement.parentNode.appendChild(clone);
+    firstElement.remove();
+}
+
 function slideRight() {
     let nextOffset = offset + 1;
     if (nextOffset === sliderElements.length) {
-        nextOffset = 0;
+        moveFirstElement();
+        offset = sliderElements.length - 2;
+        nextOffset = offset + 1;
     }
     for (const element of sliderElements) {
         animateTransition(element, -100 * offset, -100 * nextOffset, 0.5);
@@ -131,10 +140,19 @@ function slideRight() {
 
 left.addEventListener('click', slideLeft);
 
+function moveLastElement() {
+    const lastElement = sliderElements[sliderElements.length - 1];
+    const clone = lastElement.cloneNode(true);
+    lastElement.parentNode.insertBefore(clone, lastElement.parentNode.firstChild);
+    lastElement.remove();
+}
+
 function slideLeft() {
     let prev = offset - 1;
     if (prev === -1) {
-        prev = sliderElements.length -1;
+    moveLastElement();
+    offset = 1;
+    prev = offset - 1
     }
     for (const element of sliderElements) {
         animateTransition(element, -100 * offset, -100 * prev, 0.5);
