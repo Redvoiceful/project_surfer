@@ -13,7 +13,7 @@ html{
     }
 }
 
-:before{
+:before .goods__parameters{
     @include tablets{
         display: none;
     }

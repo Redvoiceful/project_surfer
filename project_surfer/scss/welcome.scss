@@ -2,6 +2,7 @@
     min-height: 600px;
     height: 100%;
     margin: auto;
+    transform: translateY(0%);
     @include tablets{
         min-height: inherit;
     }

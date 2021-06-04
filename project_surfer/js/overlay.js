@@ -13,6 +13,7 @@ const right = document.getElementById('right');
 const first = document.getElementById('first');
 const second = document.getElementById('second');
 const unit = document.getElementsByClassName('about__unit');
+const section = document.getElementsByClassName('section');
 
 
 menu.isOpened = false;
@@ -168,6 +169,7 @@ $(document).ready(function () {
     });
 })
 
+
 // const review = document.getElementsByClassName('review__list');
 // let reviewCounter = 0;
 //
@@ -259,4 +261,22 @@ function validate(form__row) {
         return true;
     }
 }
+
+const sections = document.getElementById('wrapper');
+
+let firstSection = 0
+
+window.addEventListener('wheel');
+
+console.log(section)
+
+
+
+
+
+
+
+
+
+
 

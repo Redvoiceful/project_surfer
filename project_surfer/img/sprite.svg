@@ -52,4 +52,16 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 7" id="polygon">
     <path d="M4.5 7L.603.25h7.794L4.5 7z" fill="#292929"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 5" id="duration">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.825.458h440.669c.551 0 .997.448.997.997V3.45c0 .55-.446.996-.997.996H1.825a.997.997 0 01-.997-.996V1.455c0-.55.447-.997.997-.997z" fill="#fff"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 17" id="play">
+    <path d="M11.407 9.429l-8.46 6.74c-.808.641-1.998.065-1.998-.967V1.722c0-1.03 1.19-1.607 1.998-.965l8.46 6.74c.614.492.614 1.44 0 1.933z" fill="#fff"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 17" id="volume">
+    <path d="M11.188.766L5.016 5.674a3.132 3.132 0 00-1.497-.372 3.158 3.158 0 00-3.16 3.16 3.158 3.158 0 003.16 3.161c.54 0 1.05-.14 1.497-.372l6.172 4.918c.809.641 1.999.065 1.999-.967V1.723c0-1.032-1.19-1.608-1.999-.957z" fill="#fff"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.607 47.607" id="pause">
+    <path d="M17.991 40.976a6.631 6.631 0 01-13.262 0V6.631a6.631 6.631 0 0113.262 0v34.345zm24.886 0a6.631 6.631 0 01-13.262 0V6.631a6.631 6.631 0 0113.262 0v34.345z"></path>
+  </symbol>
 </svg>

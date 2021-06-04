@@ -9,7 +9,7 @@
   align-items: center;
   color: #292929;
   @include phones{
-    display: block;
+    display: flex;
   }
 }
 
@@ -64,7 +64,9 @@
 .name{
   font-size: 1.2rem;
   font-weight: bold;
-  order: -1;
+  @include tablets{
+    order: -1;
+  }
 }
 
 .name .team__item--active{
